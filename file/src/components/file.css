@@ -1,0 +1,37 @@
+/* styles.css (or your preferred CSS file) */
+.file-explorer {
+    display: flex;
+    height: 100vh;
+}
+
+.directory-tree {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.directory-tree ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.directory-tree li {
+    margin-left: 20px;
+    padding: 5px 0;
+}
+
+.directory-tree .folder::before {
+    content: '📁';
+    margin-right: 5px;
+}
+
+.directory-tree .file::before {
+    content: '📄';
+    margin-right: 5px;
+}
+
+.content-area {
+    flex: 2;
+    padding: 20px;
+}
